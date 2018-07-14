@@ -1,0 +1,17 @@
+C:\Users\Steffi\CarsalesHomeworkAssignment.BLL\bin\Debug\netcoreapp2.1\CarsalesHomeworkAssignment.BLL.deps.json
+C:\Users\Steffi\CarsalesHomeworkAssignment.BLL\bin\Debug\netcoreapp2.1\CarsalesHomeworkAssignment.BLL.dll
+C:\Users\Steffi\CarsalesHomeworkAssignment.BLL\bin\Debug\netcoreapp2.1\CarsalesHomeworkAssignment.BLL.pdb
+C:\Users\Steffi\CarsalesHomeworkAssignment.BLL\obj\Debug\netcoreapp2.1\CarsalesHomeworkAssignment.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Steffi\CarsalesHomeworkAssignment.BLL\obj\Debug\netcoreapp2.1\CarsalesHomeworkAssignment.BLL.AssemblyInfoInputs.cache
+C:\Users\Steffi\CarsalesHomeworkAssignment.BLL\obj\Debug\netcoreapp2.1\CarsalesHomeworkAssignment.BLL.AssemblyInfo.cs
+C:\Users\Steffi\CarsalesHomeworkAssignment.BLL\obj\Debug\netcoreapp2.1\CarsalesHomeworkAssignment.BLL.dll
+C:\Users\Steffi\CarsalesHomeworkAssignment.BLL\obj\Debug\netcoreapp2.1\CarsalesHomeworkAssignment.BLL.pdb
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignment.BLL\bin\Debug\netcoreapp2.1\CarsalesHomeworkAssignment.BLL.deps.json
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignment.BLL\bin\Debug\netcoreapp2.1\CarsalesHomeworkAssignment.BLL.dll
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignment.BLL\bin\Debug\netcoreapp2.1\CarsalesHomeworkAssignment.BLL.pdb
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignment.BLL\obj\Debug\netcoreapp2.1\CarsalesHomeworkAssignment.BLL.csprojAssemblyReference.cache
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignment.BLL\obj\Debug\netcoreapp2.1\CarsalesHomeworkAssignment.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignment.BLL\obj\Debug\netcoreapp2.1\CarsalesHomeworkAssignment.BLL.AssemblyInfoInputs.cache
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignment.BLL\obj\Debug\netcoreapp2.1\CarsalesHomeworkAssignment.BLL.AssemblyInfo.cs
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignment.BLL\obj\Debug\netcoreapp2.1\CarsalesHomeworkAssignment.BLL.dll
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignment.BLL\obj\Debug\netcoreapp2.1\CarsalesHomeworkAssignment.BLL.pdb

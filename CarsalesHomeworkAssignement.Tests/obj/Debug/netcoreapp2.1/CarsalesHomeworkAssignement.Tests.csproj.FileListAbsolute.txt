@@ -1,0 +1,14 @@
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignement.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignement.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignement.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignement.Tests\bin\Debug\netcoreapp2.1\CarsalesHomeworkAssignement.Tests.deps.json
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignement.Tests\bin\Debug\netcoreapp2.1\CarsalesHomeworkAssignement.Tests.runtimeconfig.json
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignement.Tests\bin\Debug\netcoreapp2.1\CarsalesHomeworkAssignement.Tests.runtimeconfig.dev.json
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignement.Tests\bin\Debug\netcoreapp2.1\CarsalesHomeworkAssignement.Tests.dll
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignement.Tests\bin\Debug\netcoreapp2.1\CarsalesHomeworkAssignement.Tests.pdb
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignement.Tests\obj\Debug\netcoreapp2.1\CarsalesHomeworkAssignement.Tests.csprojAssemblyReference.cache
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignement.Tests\obj\Debug\netcoreapp2.1\CarsalesHomeworkAssignement.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignement.Tests\obj\Debug\netcoreapp2.1\CarsalesHomeworkAssignement.Tests.AssemblyInfoInputs.cache
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignement.Tests\obj\Debug\netcoreapp2.1\CarsalesHomeworkAssignement.Tests.AssemblyInfo.cs
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignement.Tests\obj\Debug\netcoreapp2.1\CarsalesHomeworkAssignement.Tests.dll
+C:\Users\Steffi\CarsalesHomeworkAssignment\CarsalesHomeworkAssignement.Tests\obj\Debug\netcoreapp2.1\CarsalesHomeworkAssignement.Tests.pdb
