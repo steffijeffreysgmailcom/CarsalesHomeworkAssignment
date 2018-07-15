@@ -4,13 +4,10 @@ using System.Text;
 
 namespace CarsalesHomeworkAssignment.BLL
 {
-    public interface Vehicle
+    public interface IVehicle
     {
 		int Id { get; set; }
-		int Make { get; set; }
-		int Model { get; set; }
-
-
-
+		string Make { get; set; }
+		string Model { get; set; }
 	}
 }

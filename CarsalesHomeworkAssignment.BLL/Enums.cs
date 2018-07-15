@@ -4,7 +4,8 @@ using System.Text;
 
 namespace CarsalesHomeworkAssignment.BLL
 {
-    class Enums
-    {
-    }
+	public enum VehicleType
+	{
+		Car
+	}
 }

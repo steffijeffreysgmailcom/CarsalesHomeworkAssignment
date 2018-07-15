@@ -1,26 +1,29 @@
-﻿using System;
+﻿using CarsalesHomeworkAssignment.DAL;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 
 namespace CarsalesHomeworkAssignment.BLL
 {
     public class VehicleService
     {
-		public List<Vehicle> GetAllVehicles()
+		public static List<IVehicle> GetAllVehiclesOfType(VehicleType type)
+		{
+
+			throw new NotImplementedException();
+		}
+
+		public static IVehicle GetVehicle(int id)
 		{
 			throw new NotImplementedException();
 		}
 
-		public Vehicle GetVehicle(int id)
-		{
-			throw new NotImplementedException();
-		}
-
-		public void CreateVehicle(Vehicle vehicle)
+		public static void CreateVehicle(IVehicle vehicle)
 		{
 			throw new NotImplementedException();
 		}
 		
-		public void EditVehicle(int id, Vehicle vehicle)
+		public static void EditVehicle(int id, IVehicle vehicle)
 		{
 			throw new NotImplementedException();
 		}
