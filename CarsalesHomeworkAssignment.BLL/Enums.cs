@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace CarsalesHomeworkAssignment.BLL
 {
-    public class Class1
+    class Enums
     {
     }
 }
