@@ -26,3 +26,7 @@ At the moment there is a single object that needs to be stored in the database, 
 Final Decision 
 * Use Table per hierarchy design
 
+### Separated DAL, BLL and Presentation Layer
+* This was chosen as it is very likely certain components might get replaced. Using an inmemory database works well for a prototype solution, however will eventually need to be replaced by a real database. Having the DAL separated allows for this to happen easily. The presentation layer is also likely to change or to have multiple sorts. For example, people might want to manage their cars from an app instead. 
+
+ 

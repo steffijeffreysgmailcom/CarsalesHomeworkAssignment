@@ -21,4 +21,22 @@ namespace CarsalesHomeworkAssignment.BLL
 		{
 		}
 	}
+
+
+	public class AllAttributesNullException : Exception
+	{
+		public AllAttributesNullException()
+		{
+		}
+
+		public AllAttributesNullException(string message)
+			: base(message)
+		{
+		}
+
+		public AllAttributesNullException(string message, Exception inner)
+			: base(message, inner)
+		{
+		}
+	}
 }

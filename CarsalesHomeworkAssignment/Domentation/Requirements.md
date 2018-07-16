@@ -1,5 +1,5 @@
 # CarsalesHomeworkAssignment
-A Vechicle Management System
+A Vehicle Management System
 
 General requirements and assumptions
 Requirements:

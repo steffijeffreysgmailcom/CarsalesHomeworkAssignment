@@ -5,17 +5,47 @@ using Xunit;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Collections.Generic;
+using Microsoft.Extensions.DependencyInjection;
+using System.Net.Http;
+using Microsoft.AspNetCore.TestHost;
+using carsalesHomeworkAssignment;
+using Microsoft.Extensions.Configuration;
 
 namespace CarsalesHomeworkAssignement.Tests
 {
+	
+
+	public class TestStartup : Startup
+	{
+		public TestStartup(IConfiguration configuration) : base(configuration)
+		{
+		}
+
+		public override void ConfigureServices(IServiceCollection services)
+		{
+			services
+				.AddEntityFrameworkInMemoryDatabase()
+				.AddDbContext<CarsalesHomeworkAssignment.DAL.VehicleRecordDBContext>((sp, options) =>
+				{
+					options.UseInMemoryDatabase("VehicleRecordDB").UseInternalServiceProvider(sp);
+				});
+			base.ConfigureServices(services);
+		}
+	}
+
 	public class Given_The_User_Is_Creating_A_Car
 	{
 
 		public class And_The_User_Fills_In_All_Fields
 		{
+
+			public HttpClient Client { get; set; }
+			private readonly TestServer _server;
+
 			[Fact]
 			public void It_Saves_A_New_Car_With_All_The_Feilds()
 			{
+
 				string testCarMake = "Test new car with all feilds";
 				string testCarModel = "A4";
 				string testCarEngine = "4 cylinder Petrol Turbo Intercooled 2.0L";
@@ -57,7 +87,7 @@ namespace CarsalesHomeworkAssignement.Tests
 
 				Car testCar = new Car();
 
-				Assert.Throws<VehicleNotFoundException>(() =>
+				Assert.Throws<AllAttributesNullException>(() =>
 									VehicleService.CreateVehicle(testCar));
 			}
 		}
@@ -141,9 +171,9 @@ namespace CarsalesHomeworkAssignement.Tests
 
 				using (VehicleRecordDBContext database = new VehicleRecordDBContext(builder.Options))
 				{
-					Vehicle testCar = new Vehicle();
 					for (int testCarNo = 0; testCarNo < numberOfCarsInSystem; testCarNo++)
 					{
+						Vehicle testCar = new Vehicle();
 						testCar.Make = "Test Searching for many cars: car " + testCarNo;
 						testCar.VehicleType = (short)VehicleType.Car;
 						database.Add(testCar);
@@ -163,6 +193,7 @@ namespace CarsalesHomeworkAssignement.Tests
 	{
 		public class Add_The_Car_Does_Not_Exist
 		{
+			[Fact]
 			public void It_Throws_A_Vehicle_Not_Found_Exception()
 			{
 				Assert.Throws<VehicleNotFoundException>(() =>
@@ -170,8 +201,10 @@ namespace CarsalesHomeworkAssignement.Tests
 			}
 		}
 
+
 		public class Add_The_Car_Does_Exist
 		{
+			[Fact]
 			public void It_Returns_The_Car()
 			{
 				int testCarId = 0;
@@ -277,7 +310,7 @@ namespace CarsalesHomeworkAssignement.Tests
 			public class And_The_User_Fills_In_None_Of_The_Fields
 			{
 				[Fact]
-				public void It_Makes_No_Change_To_The_Car()
+				public void It_Makes_No_Change_To_The_Car_And_Throws_An_AllAttributesNullException()
 				{
 					string seedCarMake = "Test new car with all feilds";
 					string seedCarModel = "A4";
@@ -307,7 +340,9 @@ namespace CarsalesHomeworkAssignement.Tests
 					}
 
 					Car testCar = new Car();
-					VehicleService.EditVehicle(seedCarId, testCar);
+
+					Assert.Throws<AllAttributesNullException>(() =>
+										VehicleService.EditVehicle(seedCarId, testCar));
 
 					using (VehicleRecordDBContext database = new VehicleRecordDBContext(builder.Options))
 					{
@@ -319,6 +354,7 @@ namespace CarsalesHomeworkAssignement.Tests
 						Assert.Equal(seedCarWheels, resultVehicle.Wheels);
 						Assert.Equal(seedCarDoors, resultVehicle.Doors);
 						Assert.Equal((short)VehicleType.Car, resultVehicle.VehicleType);
+
 					}
 				}
 			}
@@ -326,7 +362,7 @@ namespace CarsalesHomeworkAssignement.Tests
 			public class And_The_User_Fills_In_One_Field
 			{
 				[Fact]
-				public void It_Changes_That_Signle_Feilds()
+				public void It_Changes_That_Field_And_Sets_All_Other_Fields_To_Null()
 				{
 					string seedCarMake = "Test new car with all feilds";
 					string seedCarModel = "A4";
@@ -363,12 +399,12 @@ namespace CarsalesHomeworkAssignement.Tests
 					using (VehicleRecordDBContext database = new VehicleRecordDBContext(builder.Options))
 					{
 						Vehicle resultVehicle = database.Vehicles.Where(v => v.Id == seedCarId).FirstOrDefault();
-						Assert.Equal(seedCarMake, resultVehicle.Make);
+						Assert.Null(resultVehicle.Make);
 						Assert.Equal(testCarModel, resultVehicle.Model);
-						Assert.Equal(seedCarEngine, resultVehicle.Engine);
-						Assert.Equal(seedCarBodyType, resultVehicle.BodyType);
-						Assert.Equal(seedCarWheels, resultVehicle.Wheels);
-						Assert.Equal(seedCarDoors, resultVehicle.Doors);
+						Assert.Null(resultVehicle.Engine);
+						Assert.Null(resultVehicle.BodyType);
+						Assert.Null(resultVehicle.Wheels);
+						Assert.Null(resultVehicle.Doors);
 						Assert.Equal((short)VehicleType.Car, resultVehicle.VehicleType);
 					}
 				}
