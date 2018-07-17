@@ -1,0 +1,63 @@
+<h1>{{title}}</h1>
+<h3>Car</h3>
+<hr />
+<form [formGroup]="carForm" (ngSubmit)="save()" #formDir="ngForm" novalidate>
+  <div class="form-group row">
+    <label class=" control-label col-md-12">Make</label>
+    <div class="col-md-4">
+      <input class="form-control" type="text" formControlName="make" required>
+    </div>
+    <span class="text-danger" *ngIf="make.invalid && formDir.submitted">
+      Name is required.
+    </span>
+  </div>
+  <div class="form-group row">
+    <label class=" control-label col-md-12">Model</label>
+    <div class="col-md-4">
+      <input class="form-control" type="text" formControlName="model" required>
+    </div>
+    <span class="text-danger" *ngIf="model.invalid && formDir.submitted">
+      Name is required.
+    </span>
+  </div>
+  <div class="form-group row">
+    <label class=" control-label col-md-12">Engine</label>
+    <div class="col-md-4">
+      <input class="form-control" type="text" formControlName="engine" required>
+    </div>
+    <span class="text-danger" *ngIf="engine.invalid && formDir.submitted">
+      Name is required.
+    </span>
+  </div>
+  <div class="form-group row">
+    <label class=" control-label col-md-12">Body Type</label>
+    <div class="col-md-4">
+      <input class="form-control" type="text" formControlName="bodytype" required>
+    </div>
+    <span class="text-danger" *ngIf="bodytype.invalid && formDir.submitted">
+      Name is required.
+    </span>
+  </div>
+  <div class="form-group row">
+    <label class=" control-label col-md-12">Wheels</label>
+    <div class="col-md-4">
+      <input class="form-control" type="text" formControlName="wheels" required>
+    </div>
+    <span class="text-danger" *ngIf="wheels.invalid && formDir.submitted">
+      Name is required.
+    </span>
+  </div>
+  <div class="form-group row">
+    <label class=" control-label col-md-12">Doors</label>
+    <div class="col-md-4">
+      <input class="form-control" type="text" formControlName="doors" required>
+    </div>
+    <span class="text-danger" *ngIf="doors.invalid && formDir.submitted">
+      Name is required.
+    </span>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-default">Save</button>
+    <button class="btn" (click)="cancel()">Cancel</button>
+  </div>
+</form>  

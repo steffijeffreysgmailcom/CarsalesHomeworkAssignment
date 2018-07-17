@@ -3803,23 +3803,6 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
-      "CarsalesHomeworkAssignment/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "dependencies": {
-          "CarsalesHomeworkAssignment.BLL": "1.0.0",
-          "CarsalesHomeworkAssignment.DAL": "1.0.0",
-          "Microsoft.AspNetCore.SpaServices.Extensions": "2.1.1",
-          "Microsoft.EntityFrameworkCore.InMemory": "2.1.1",
-          "Microsoft.NETCore.App": "2.1.0"
-        },
-        "compile": {
-          "bin/placeholder/CarsalesHomeworkAssignment.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CarsalesHomeworkAssignment.dll": {}
-        }
-      },
       "CarsalesHomeworkAssignment.BLL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -3845,6 +3828,23 @@
         },
         "runtime": {
           "bin/placeholder/CarsalesHomeworkAssignment.DAL.dll": {}
+        }
+      },
+      "CarsalesHomeworkAssignment.WebPortal/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "CarsalesHomeworkAssignment.BLL": "1.0.0",
+          "CarsalesHomeworkAssignment.DAL": "1.0.0",
+          "Microsoft.AspNetCore.SpaServices.Extensions": "2.1.1",
+          "Microsoft.EntityFrameworkCore.InMemory": "2.1.1",
+          "Microsoft.NETCore.App": "2.1.0"
+        },
+        "compile": {
+          "bin/placeholder/CarsalesHomeworkAssignment.WebPortal.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CarsalesHomeworkAssignment.WebPortal.dll": {}
         }
       }
     }
@@ -10632,11 +10632,6 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "CarsalesHomeworkAssignment/1.0.0": {
-      "type": "project",
-      "path": "../CarsalesHomeworkAssignment/CarsalesHomeworkAssignment.csproj",
-      "msbuildProject": "../CarsalesHomeworkAssignment/CarsalesHomeworkAssignment.csproj"
-    },
     "CarsalesHomeworkAssignment.BLL/1.0.0": {
       "type": "project",
       "path": "../CarsalesHomeworkAssignment.BLL/CarsalesHomeworkAssignment.BLL.csproj",
@@ -10646,13 +10641,18 @@
       "type": "project",
       "path": "../CarsalesHomeworkAssignment.DAL/CarsalesHomeworkAssignment.DAL.csproj",
       "msbuildProject": "../CarsalesHomeworkAssignment.DAL/CarsalesHomeworkAssignment.DAL.csproj"
+    },
+    "CarsalesHomeworkAssignment.WebPortal/1.0.0": {
+      "type": "project",
+      "path": "../CarsalesHomeworkAssignment/CarsalesHomeworkAssignment.WebPortal.csproj",
+      "msbuildProject": "../CarsalesHomeworkAssignment/CarsalesHomeworkAssignment.WebPortal.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "CarsalesHomeworkAssignment >= 1.0.0",
       "CarsalesHomeworkAssignment.BLL >= 1.0.0",
       "CarsalesHomeworkAssignment.DAL >= 1.0.0",
+      "CarsalesHomeworkAssignment.WebPortal >= 1.0.0",
       "Microsoft.EntityFrameworkCore.InMemory >= 2.1.1",
       "Microsoft.NET.Test.Sdk >= 15.7.0",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -10697,8 +10697,8 @@
             "C:\\Users\\Steffi\\CarsalesHomeworkAssignment\\CarsalesHomeworkAssignment.DAL\\CarsalesHomeworkAssignment.DAL.csproj": {
               "projectPath": "C:\\Users\\Steffi\\CarsalesHomeworkAssignment\\CarsalesHomeworkAssignment.DAL\\CarsalesHomeworkAssignment.DAL.csproj"
             },
-            "C:\\Users\\Steffi\\CarsalesHomeworkAssignment\\CarsalesHomeworkAssignment\\CarsalesHomeworkAssignment.csproj": {
-              "projectPath": "C:\\Users\\Steffi\\CarsalesHomeworkAssignment\\CarsalesHomeworkAssignment\\CarsalesHomeworkAssignment.csproj"
+            "C:\\Users\\Steffi\\CarsalesHomeworkAssignment\\CarsalesHomeworkAssignment\\CarsalesHomeworkAssignment.WebPortal.csproj": {
+              "projectPath": "C:\\Users\\Steffi\\CarsalesHomeworkAssignment\\CarsalesHomeworkAssignment\\CarsalesHomeworkAssignment.WebPortal.csproj"
             }
           }
         }
