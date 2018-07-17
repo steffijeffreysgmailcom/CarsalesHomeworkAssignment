@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore.InMemory;
+using Microsoft.EntityFrameworkCore;
 
 namespace carsalesHomeworkAssignment
 {
@@ -18,16 +20,25 @@ namespace carsalesHomeworkAssignment
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public virtual void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            // In production, the Angular files will be served from this directory
-            services.AddSpaStaticFiles(configuration =>
-            {
-                configuration.RootPath = "ClientApp/dist";
-            });
-        }
+			// In production, the Angular files will be served from this directory
+			services
+				.AddSpaStaticFiles(configuration =>
+				{
+					configuration.RootPath = "ClientApp/dist";
+				});
+
+			services
+				.AddEntityFrameworkInMemoryDatabase()
+				.AddDbContext<CarsalesHomeworkAssignment.DAL.VehicleRecordDBContext>((sp, options) =>
+				   {
+					   options.UseInMemoryDatabase("VehicleRecordDB").UseInternalServiceProvider(sp);
+				   });
+			
+		}
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -66,5 +77,5 @@ namespace carsalesHomeworkAssignment
                 }
             });
         }
-    }
+	}
 }

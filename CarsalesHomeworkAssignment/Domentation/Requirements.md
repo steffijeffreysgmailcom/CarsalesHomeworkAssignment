@@ -1,5 +1,5 @@
 # CarsalesHomeworkAssignment
-A Vechicle Management System
+A Vehicle Management System
 
 General requirements and assumptions
 Requirements:
@@ -28,9 +28,9 @@ As a user I want to record the details of my car so that I can manage them later
 
 As a user I want to see all my current cars so that I can manage them
 * A drop down with all current cars should be shown
-** The cars should show the make and model to identify them
-** There should be an edit button on each car that allows me to see and edit that car
-** All fields should show the current car’s specification
+    * The cars should show the make and model to identify them
+    * There should be an edit button on each car that allows me to see and edit that car
+    * All fields should show the current car’s specification
 
 As a user I want to edit my current cars so that I can keep the cars details up to day
 * As a user I want to be able to access the edit page so that I can update my cars
