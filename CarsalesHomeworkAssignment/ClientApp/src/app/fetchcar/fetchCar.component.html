@@ -1,0 +1,38 @@
+<h1>Car Data</h1>
+
+<p>This component demonstrates fetching Car data from the server.</p>
+
+<p *ngIf="!carList"><em>Loading...</em></p>
+
+<p>
+  <a [routerLink]="['/addcar']">Create New</a>
+</p>
+
+<table class='table' *ngIf="carList">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Make</th>
+      <th>Model</th>
+      <th>Engine</th>
+      <th>Body Type</th>
+      <th>Doors</th>
+      <th>Wheels</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let car of carList">
+      <td>{{ car.id }}</td>
+      <td>{{ car.make }}</td>
+      <td>{{ car.model }}</td>
+      <td>{{ car.engine }}</td>
+      <td>{{ car.bodytype }}</td>
+      <td>{{ car.doors }}</td>
+      <td>{{ car.wheels }}</td>
+      <td>
+      <td>
+        <a [routerLink]="['/vehicle/edit/', car.id]">Edit</a> |
+      </td>
+    </tr>
+  </tbody>
+</table>  

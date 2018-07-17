@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarsalesHomeworkAssignment", "CarsalesHomeworkAssignment.csproj", "{443A4B3C-BBAA-4A87-90A2-97FBB043B699}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarsalesHomeworkAssignment.WebPortal", "CarsalesHomeworkAssignment.WebPortal.csproj", "{443A4B3C-BBAA-4A87-90A2-97FBB043B699}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarsalesHomeworkAssignment.BLL", "..\CarsalesHomeworkAssignment.BLL\CarsalesHomeworkAssignment.BLL.csproj", "{010DC533-7C0F-4296-B09E-C5011C5BB490}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -12,7 +12,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarsalesHomeworkAssignment.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarsalesHomeworkAssignment.Tests", "..\CarsalesHomeworkAssignement.Tests\CarsalesHomeworkAssignment.Tests.csproj", "{CBB131CF-2B31-4EA3-9552-B30265851996}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsalesHomeworkAssignment.DAL", "..\CarsalesHomeworkAssignment.DAL\CarsalesHomeworkAssignment.DAL.csproj", "{4A2EB91A-AB9B-43BD-BF76-433C2C24DC81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarsalesHomeworkAssignment.DAL", "..\CarsalesHomeworkAssignment.DAL\CarsalesHomeworkAssignment.DAL.csproj", "{4A2EB91A-AB9B-43BD-BF76-433C2C24DC81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -18,7 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CarsalesHomeworkAssignment.BLL\CarsalesHomeworkAssignment.BLL.csproj" />
     <ProjectReference Include="..\CarsalesHomeworkAssignment.DAL\CarsalesHomeworkAssignment.DAL.csproj" />
-    <ProjectReference Include="..\CarsalesHomeworkAssignment\CarsalesHomeworkAssignment.csproj" />
+    <ProjectReference Include="..\CarsalesHomeworkAssignment\CarsalesHomeworkAssignment.WebPortal.csproj" />
   </ItemGroup>
 
 </Project>
